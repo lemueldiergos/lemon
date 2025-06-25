@@ -816,7 +816,7 @@ function loop() {
 
     let LOAD_STATUS = (parseFloat(HUMAN_MODEL_PERCENT) + parseFloat(MAPPP_MODEL_PERCENT)) / 2;
     LS_STATE.innerHTML = LOAD_STATUS.toFixed(2);
-    if(LOAD_STATUS == 100) {
+    if(LOAD_STATUS >= 100) {
         loading_screen.style.display = "none";
     }
 
