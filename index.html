@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ENGR. LEM | Embedded Systems Programmer</title>
+    <link rel="stylesheet" type="text/css" href="index.css">
+    <script type="importmap">
+    {
+        "imports": {
+            "three": "https://cdn.jsdelivr.net/npm/three@0.177.0/build/three.module.js",
+            "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.177.0/examples/jsm/"
+        }
+    }
+    </script>
+</head>
+<body>
+<div class="Loading_screen">
+    <h3>Loading <span class="LS_status"></span>%</h3>
+</div>
+<ol class="side_window sw_main">
+    <li onclick="window_switch(0)" role="button">Attributes</li>
+    <li onclick="window_switch(1)" role="button">Tools</li>
+    <li onclick="window_switch(2)" role="button">Skills</li>
+    <li onclick="window_switch(3)" role="button">Experience</li>
+    <li onclick="window_switch(4)" role="button">Profile</li>
+</ol>
+
+<div class="sw_tools">
+    <h1>TOOLS</h1>
+    <img onclick="more_tools(0)" src="assets/Tools/laptop-min.png"/>
+    <img onclick="more_tools(1)" src="assets/Tools/riprap-min.png"/>
+    <img onclick="more_tools(2)" src="assets/Tools/sla-min.png"/>
+    <img onclick="more_tools(3)" src="assets/Tools/soldering iron-min.png"/>
+</div>
+
+<div class="sw_profile">
+<span class="swp_color">2016</span>
+• Began my journey in programming, starting with web programming (HTML, CSS, Javascript, PHP).
+
+<span class="swp_color">2018</span>
+• Enrolled in Filamer Christian University, majoring in TVL - ICT with a focus on Robotics 
+Programming.
+• Programmer of a vacuum robot named Dusty for the Science Investigatory Project (S.I.P) at Dao Elementary School.
+
+<span class="swp_color">2019</span>
+• Ventured into 3D modeling and printing, acquiring my own 3D printer (Reprap 3D printer).
+• Assisted in Arduino programming for a teacher's thesis project towards a Master's Degree.
+• Championed in a Technolympics competition (Web Page programming) held in Roxas City.
+
+<span class="swp_color">2020</span> 
+• Graduated in Filamer Christian University (Best in Robotics Programming and Immersion)
+• Started my small business on Shopee, named L3DMaker, specializing in 3D printed figurines.
+• Pursued a bachelor's degree in Electronics Engineering at Iloilo Science and Technology University.
+
+<span class="swp_color">2021</span>
+• Acquired a small Laser Diode Printer.
+
+<span class="swp_color">2022</span>
+• Furthered my knowledge in Blender 3D and began learning Solidworks, another CAD software.
+
+<span class="swp_color">2023</span>
+• Acquired another type of 3D printer (SLA 3D Printer).
+• Engaged as a microcontroller programmer (using ESP32 CAM and Arduino MEGA) and interfaced with various sensors (Turbidity, pH, Temperature, and Dissolved Oxygen), and developed a mobile application using Cordova for a single thesis project (Doctoral Degree Thesis).
+• Intern at Roxas PAGASA Synoptic Weather Station.
+
+<span class="swp_color">2024</span>
+• Continuing to make figurines whenever I have time, and taking on some sideline programming projects for various research projects.
+• Programmer for both software and hardware in a flood monitoring system.
+
+<span class="swp_color">2025</span>
+• Passed the Electronics Engineering Licensure Exam (ECELE)
+• Passed the Electronics Technician Licensure Exam (ECTLE)
+</div>
+
+
+<div class="right_tools_desc"> 
+    <h1><span class="rtd_name">Skills Name</span>
+        <p class="rtd_type">Type of skill</p>
+    </h1>
+    <div class="rtd_level">
+        <span>Level</span>
+        <span class="rtd_level_adj">00</span>
+    </div>
+    <div class="rtd_star">
+        ⭐⭐⭐⭐⭐
+    </div>
+    <div class="rtd_desc">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci illum vero laboriosam dicta autem, laborum nostrum deleniti repudiandae veniam aliquam sint porro cumque assumenda aperiam veritatis illo ex id est.
+    </div>
+    <button class="seeMore_lite rtd_close_btn">Close</button>
+</div>
+
+<div class="sw_experience">
+    <h1>EXPERIENCES</h1>
+    <div class="sw_experience_content">
+    <div class="swe_parents">
+        <div class="swe_child_img">
+            <img id="swe_img_srcA" src="./assets/experience/1.png"/>
+        </div>
+        <div class="swe_child_desc">
+            <h2>
+                <span class="swe_cd_names">Project Name Project Name</span>
+                <p class="swe_cd_year">20xx</p>
+                <hr>
+            </h2>
+            <p class="swe_cd_desc">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci voluptas quam nihil deleniti vitae, illo sunt doloribus saepe corporis delectus ipsum fuga assumenda ullam distinctio eum repellat vero, rerum blanditiis.
+            </p>
+        </div>
+    </div>
+
+    <div class="swe_parents">
+        <div class="swe_child_img">
+            <img id="swe_img_srcB" src="./assets/experience/2.png"/>
+        </div>
+        <div class="swe_child_desc">
+            <h2>
+                <span class="swe_cd_names">Project Name Project Name</span>
+                <p class="swe_cd_year">20xx</p>
+                <hr>
+            </h2>
+            <p class="swe_cd_desc">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci voluptas quam nihil deleniti vitae, illo sunt doloribus saepe corporis delectus ipsum fuga assumenda ullam distinctio eum repellat vero, rerum blanditiis.
+            </p>
+        </div>
+    </div>
+    </div>
+    <div class="swe_button_group">
+        <button class="seeMore_lite">See More</button>
+        <button class="seeMore_lite swbg_close">Close</button>
+    </div>
+</div>
+
+<div class="sw_skills">
+    <h1>SKILLS</h1>
+    
+    <img onclick="skills_show_det(0)" src="assets/skills_render/blender.png"/>
+    <img onclick="skills_show_det(1)" src="assets/skills_render/c.png"/>
+    <img onclick="skills_show_det(2)" src="assets/skills_render/cpp.png"/>
+    <img onclick="skills_show_det(3)" src="assets/skills_render/bootstrap.png"/>
+    <img onclick="skills_show_det(4)" src="assets/skills_render/css.png"/>
+    <img onclick="skills_show_det(5)" src="assets/skills_render/html.png"/>
+    <img onclick="skills_show_det(6)" src="assets/skills_render/js.png"/>
+    <img onclick="skills_show_det(7)" src="assets/skills_render/py.png"/>
+    <img onclick="skills_show_det(8)" src="assets/skills_render/scilab.png"/>
+    <img onclick="skills_show_det(9)" src="assets/skills_render/sw.png"/>
+    <img onclick="skills_show_det(10)" src="assets/skills_render/threejs.png"/>
+</div>
+
+<canvas id="cvs"></canvas>
+
+<div class="Attributes_win">
+    <h1>
+        Lemon+
+    </h1>
+    <div class="social_media">
+        <img src="assets/icon/facebook.png" class="attribute_social_logo" alt="Facebook">
+        <img src="assets/icon/twitter.png" class="attribute_social_logo" alt="Twitter">
+        <img src="assets/icon/linkedin.png" class="attribute_social_logo" alt="LinkEnd">
+        <img src="assets/icon/github.png" class="attribute_social_logo" alt="GitHub">
+    </div>
+    <div class="progress_bar">
+        <p>Level 24/120</p>
+        <div class="bar_real">
+            <div class="bar_real_loader"></div>
+        </div>
+    </div>
+    <div class="basic_skills">
+        <div class="basic_skills_child"><div class="bsc_child"><img class="bs_icon" src="assets/icon/puzzle.png">Creativity</div><div>87</div> </div>
+        <div class="basic_skills_child"><div class="bsc_child"><img class="bs_icon" src="assets/icon/math.png">Problem Solving</div><div>90</div> </div>
+        <div class="basic_skills_child"><div class="bsc_child"><img class="bs_icon" src="assets/icon/coding.png">Programming</div><div>97</div> </div>
+        <div class="basic_skills_child"><div class="bsc_child"><img class="bs_icon" src="assets/icon/chat.png">Communication</div><div>75</div> </div>
+        <div class="basic_skills_child"><div class="bsc_child"><img class="bs_icon" src="assets/icon/adaptation.png">Adaptability</div><div>89</div> </div>
+    </div>
+    <div>
+        <button class="resume">Resume</button>
+    </div>
+    <div class="short_intro">
+        Hello, I’m Lemon, also known as Lemuel. I’m a 3D designer and embedded systems programmer who loves creating 3D models inspired by the games I play, designing electronic circuits, and exploring programming for robotics, web, and mobile applications.
+    </div>
+</div>
+
+<div class="Tools_win">
+    <h2 class="tools_header">Item Name</h2>
+    <div class="tools_variation">
+        <span class="tools_type_x">Type of Tools</span><br>
+        <span>⭐⭐⭐⭐⭐</span>
+    </div>
+    <div class="tools_level">
+        <span class="tl_1">Lv. 100<span style="color: gray;">/100</span></span>
+        <span class="tl_2">✦✦✦✦</span>
+    </div>
+    <div class="tools_description">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam voluptatem, eius laboriosam nulla ab repudiandae repellendus accusantium ut, cum veniam quasi consequatur, ullam aliquam unde commodi omnis neque sunt ipsum!
+    </div>
+    <div class="tools_seeMore">
+        <button class="seeMore_lite tools_btn">See More</button>
+    </div>
+</div>
+
+
+<div class="skills_win">
+    <div class="skills_set1">
+        <div class="ss_children"><span><img src="assets/icon/3d.png">3D Modelling</span><span>85</span></div>
+        <div class="ss_children"><span><img src="assets/icon/coding.png">Web Development</span><span>87</span></div>
+        <div class="ss_children"><span><img src="assets/icon/mobileAPP.png">Mobile App Dev.</span><span>80</span></div>
+        <div class="ss_children"><span><img src="assets/icon/electronics.png">Electronics</span><span>95</span></div>
+    </div>
+
+    <div class="skills_set2">
+        <ul>
+            <li><img src="assets/icon/check.png"><p>Highly Experience in electronics programming and prototyping across various project Developments.</p></li>
+            <li><img src="assets/icon/check.png"><p>Developed several hybrid mobile applications using Cordova, a framework that enables web deve</p></li>
+            <li><img src="assets/icon/check.png"><p>Designed numerous 3D Models for both 3D printing and prototyping</p></li>
+        </ul>
+    </div>
+
+    <div class="skills_set3">
+        <button class="seeMore_lite skills_seemore_btn">See More</button>
+    </div>
+</div>
+<div class="Experience_win">
+    <button class="EWC_P EWC_G"  onclick="exp_zoomer(0)">Programming</button>
+    <button class="EWC_R EWC_G"  onclick="exp_zoomer(1)">Robotics</button>
+    <button class="EWC_3 EWC_G"  onclick="exp_zoomer(2)">3D Printing</button>
+    <button class="EWC_E EWC_G"  onclick="exp_zoomer(3)">Engineering</button>
+</div>
+
+<div class="Profile_win">
+    <h2 class="Profile_header">Engr. Lemuel E. Diergos, ECT</h2>
+    <div class="profile_others"><hr>
+        <div class="po_child"><span>Birthday</span><span>05/11</span></div>
+        <div class="po_child"><span>Constellation</span><span>Taurus</span></div>
+        <div class="po_child"><span>Food</span><span>Adobo</span></div>
+        <div class="po_child"><span>Movie</span><span>The Wind Rises</span></div>
+    </div>
+    <div class="profile_others_short_details">
+        Registered Electronics and Communications Engineer and Electronics Technician with over 4 years of experience in embedded systems programming.
+    </div>
+    <div class="Profile_win_seemore">
+        <button class="seeMore_lite pw_btn1">See More</button>
+        <button class="seeMore_lite pw_btn2">Contact</button>
+    </div>
+</div>
+
+<div class="consoler">
+2
+</div>
+    
+
+
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+<script type="module" src="script/main.js"></script>   
+</body>
+</html>
